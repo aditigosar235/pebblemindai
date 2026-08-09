@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070914" />
+    <meta name="description" content="Pebble Mind is a local-first AI workspace for Apple devices. Think with capable models, without sending your life to the cloud." />
+    <title>Pebble Mind — Private AI, beautifully considered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+    <header class="nav-shell" id="top">
+      <a class="brand" href="#top" aria-label="Pebble Mind home">
+        <img src="assets/app-icon.png" alt="" />
+        <span>Pebble Mind</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Primary navigation">
+        <a href="#why">Why local</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#plans">Free + Pro</a>
+        <a href="#pro">Pebble Mind Pro</a>
+        <a class="nav-cta" href="#download">Get the app <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="live-dot"></span> Intelligence, kept close</div>
+          <h1>Your thoughts.<br /><em>On device.</em></h1>
+          <p class="hero-lede">Pebble Mind is the private AI workspace for people who want to run Apple and Hugging Face models directly on iPhone. Powerful models, pro-level controls, and a conversation that stays yours.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Explore Pebble Mind <span>↗</span></a>
+            <a class="text-link" href="#why">See how privacy works <span>↓</span></a>
+          </div>
+          <div class="hero-proof"><span class="proof-line"></span><span>Hugging Face → iPhone · No account · No API key · No telemetry</span></div>
+        </div>
+        <div class="hero-visual reveal delay-1" aria-label="Pebble Mind app preview">
+          <div class="orb orb-one"></div><div class="orb orb-two"></div>
+          <div class="device device-hero tilt-card">
+            <div class="device-bar"><span>9:41</span><span>●  ◒  ▰</span></div>
+            <div class="app-top"><span class="tiny-label">CHATS</span><strong>Pebble Mind</strong><span class="glass-icon">↗</span></div>
+            <div class="search-pill"><span>⌕</span> Search conversations</div>
+            <div class="chat-row"><div class="model-avatar avatar-violet">L<small>☷</small></div><div><b>Latest iPhone Model Available</b><span>Llama 3.2 1B Instruct · 11:16 PM</span><p>The latest iPhone model available is the iPhone 17 Pro Max.</p></div></div>
+            <div class="chat-row"><div class="model-avatar avatar-blue">S<small>☷</small></div><div><b>The benefits of a daily workout include…</b><span>SmolVLM 256M Instruct · 11:12 PM</span><p>Daily workouts are beneficial for weight loss, strength and flexibility…</p></div></div>
+            <div class="chat-row"><div class="model-avatar avatar-cyan">A<small>☷</small></div><div><b>Explain why the sky is blue?</b><span>Apple On-Device · 11:10 PM</span><p>The sky on Mars would appear reddish-orange. This is because…</p></div></div>
+            <div class="tab-bar"><span class="active">▣<small>Chats</small></span><span>▦<small>Models</small></span><span>⚙<small>Settings</small></span></div>
+          </div>
+          <div class="floating-chip chip-private"><span>◉</span> Private by default</div>
+          <div class="floating-chip chip-local"><span>⌁</span> Local inference</div>
+        </div>
+      </section>
+
+      <section class="manifesto section-pad" id="why">
+        <div class="section-kicker reveal">01 / The quiet advantage</div>
+        <div class="manifesto-grid">
+          <h2 class="reveal">Your models.<br /><em>Your device.</em></h2>
+          <div class="manifesto-copy reveal delay-1"><p>For the first time, developers can bring supported Hugging Face GGUF models to an iPhone and work with them directly—without routing prompts through a hosted inference API.</p><p class="muted">It is private by architecture, not by promise. Download the model once, then chat locally.</p></div>
+        </div>
+        <div class="signal-row reveal">
+          <div><strong>01</strong><span>Hugging Face on iPhone</span><p>Validate and download supported GGUF models, then run them locally through llama.cpp.</p></div>
+          <div><strong>02</strong><span>One calm workspace</span><p>Chat, model browsing, files, search, and settings share one native rhythm.</p></div>
+          <div><strong>03</strong><span>Pro-level control</span><p>Tune context, reply length, temperature, top-K, top-P, KV cache, and quantization details.</p></div>
+        </div>
+      </section>
+
+      <section class="showcase section-pad" id="how">
+        <div class="section-kicker reveal">02 / A considered workflow</div>
+        <div class="showcase-head reveal"><h2>From curious<br /><em>to clear.</em></h2><p>Pick a model that fits your device. Ask anything. Keep the trail. Pebble Mind turns the complex parts of local AI into a simple, tactile flow.</p></div>
+        <div class="feature-stage">
+          <div class="stage-copy reveal"><div class="step-number">01</div><h3>Choose your<br />kind of mind.</h3><p>Browse text and multimodal models with readable size, memory, and readiness details before you download.</p><button class="stage-tab active" data-image="models.png"><span>01</span> Browse models <i>↗</i></button><button class="stage-tab" data-image="on-device.png"><span>02</span> Ask privately <i>↗</i></button><button class="stage-tab" data-image="web-search.png"><span>03</span> Search when you choose <i>↗</i></button></div>
+          <div class="stage-screen reveal delay-1"><div class="screen-glow"></div><img id="stage-image" src="assets/models.png" alt="Pebble Mind model library showing local model options" /></div>
+        </div>
+      </section>
+
+      <section class="feature-grid section-pad" id="features">
+        <div class="section-kicker reveal">03 / The details matter</div>
+        <div class="feature-grid-head reveal"><h2>Built for the<br /><em>way you think.</em></h2><p>Native behaviors. Thoughtful feedback. The small things that make a powerful tool feel effortless.</p></div>
+        <div class="cards">
+          <article class="feature-card card-large reveal"><div class="card-icon">⌁</div><h3>Private, by default.</h3><p>Conversations, attachments, settings, logs, and model metadata stay on-device. No account, API key, or remote inference service required. Optional web search is always opt-in.</p><div class="card-foot">Your data <span>stays here</span></div></article>
+          <article class="feature-card reveal delay-1"><div class="card-icon">◌</div><h3>Chat without friction.</h3><p>Streaming replies, selectable Markdown, attachments, thinking cards, and a composer that is ready when the model is.</p><div class="mini-chat"><span>You</span><b>Summarize this locally</b><i>● ● ●</i></div></article>
+          <article class="feature-card reveal delay-2"><div class="card-icon">▦</div><h3>Models, made legible.</h3><p>See what fits, what is ready, and what it can do. Download only when you mean to.</p><div class="model-meter"><span style="width:72%"></span></div><small>72% of device memory · comfortable</small></article>
+          <article class="feature-card reveal"><div class="card-icon">⌘</div><h3>Made for Apple.</h3><p>Push navigation on iPhone. Split views on iPad. Native sharing, sheets, Liquid Glass, and accessibility in the places you expect.</p><div class="platforms"><span>iPhone</span><span>iPad</span><span>Mac</span><span>visionOS</span></div></article>
+          <article class="feature-card card-image reveal delay-1"><img src="assets/settings.png" alt="Pebble Mind settings screen" /><div class="image-overlay"><span>Everything in its place</span><small>Settings that explain themselves.</small></div></article>
+        </div>
+      </section>
+
+      <section class="privacy-banner section-pad reveal">
+        <div class="privacy-lock">✦</div><div><div class="section-kicker">A different default</div><h2>Bring your whole self.<br /><em>Leave nothing behind.</em></h2></div><a class="button button-glass" href="#download">Read our privacy promise <span>↗</span></a>
+      </section>
+
+      <section class="plans section-pad" id="plans">
+        <div class="section-kicker reveal">04 / Choose your depth</div>
+        <div class="plans-head reveal"><h2>Free to start.<br /><em>Pro when ready.</em></h2><p>Every plan gets the private core. Pro is a one-time unlock for developers, power users, and anyone who wants more control over local models.</p></div>
+        <div class="plan-grid">
+          <article class="plan-card reveal"><div class="plan-tag">FREE</div><h3>A private place to think.</h3><p>Everything you need to experience local AI on Apple platforms.</p><ul><li>Local chat with Apple Foundation Models</li><li>Browse and download supported bundled models</li><li>Conversation history and local search</li><li>Text and vision attachments where supported</li><li>Optional web search, always opt-in</li><li>Markdown replies, streaming, stop and retry</li><li>Model info, readiness, memory, and download states</li><li>App and model logs, plus reset controls</li></ul><a class="text-link" href="#download">Start with Free <span>↗</span></a></article>
+          <article class="plan-card plan-pro reveal delay-1"><div class="plan-tag">PRO · ONE-TIME PURCHASE</div><h3>Your local AI lab.</h3><p>Unlock the full Pebble Mind toolkit—built for developers and deep work.</p><ul><li><b>Bring your own models</b> — add validated Hugging Face GGUF models by HTTPS, plus vision projectors</li><li><b>Keep more models ready</b> — manage multiple downloaded models</li><li><b>Advanced generation controls</b> — temperature, top-K, top-P, context window, reply length</li><li><b>Enhanced limits</b> — up to 65,536 context and 8,192 reply tokens where device-safe</li><li><b>Performance details</b> — generation metrics for completed replies</li><li><b>Developer visibility</b> — quantization info, KV cache type, searchable logs, log deletion</li><li><b>Context compaction</b> — <code>/compact</code> compresses long chats on-device while keeping the visible history</li><li><b>Transfer tools</b> — export/import chats and configuration as local files</li><li><b>Search domains</b> — manage HTTPS web-search providers and allowlists</li></ul><a class="button button-primary" href="#download">Unlock Pebble Mind Pro <span>↗</span></a><small>Apple shows the applicable price and asks you to confirm. No recurring subscription.</small></article>
+        </div>
+      </section>
+
+      <section class="pro-section section-pad" id="pro">
+        <div class="pro-copy reveal"><div class="section-kicker">05 / When you want more</div><h2>Meet<br /><em>Pebble Mind Pro.</em></h2><p>One thoughtful upgrade for people who want to go deeper with local AI. No recurring subscription.</p><a class="button button-primary" href="#download">Unlock the full experience <span>↗</span></a></div>
+        <div class="pro-visual reveal delay-1"><div class="pro-halo"></div><div class="device device-pro tilt-card"><img src="assets/pro.png" alt="Pebble Mind Pro feature screen" /></div><div class="pro-badge">ONE-TIME<br /><b>PURCHASE</b></div></div>
+        <div class="pro-list reveal delay-2"><div><b>Bring your own models</b><span>Add supported GGUF models from Hugging Face with optional vision projectors.</span></div><div><b>More room to explore</b><span>Keep multiple models ready and tune advanced generation settings.</span></div><div><b>Developer visibility</b><span>See metrics, quantization, KV cache details, and searchable logs.</span></div><div><b>Your data tools</b><span>Export and import chats and configuration as local files.</span></div><div><b>Stay in the flow</b><span>Use <code>/compact</code> to focus long conversations without sending context away.</span></div></div>
+      </section>
+
+      <section class="faq section-pad">
+        <div class="section-kicker reveal">05 / Good to know</div><h2 class="reveal">The short<br /><em>answers.</em></h2>
+        <div class="faq-list reveal delay-1">
+          <details open><summary>Does Pebble Mind send my chats to a server?<span>+</span></summary><p>No. Inference, conversation history, attachments, settings, and model metadata stay on-device. Optional web search is the explicit exception, and it is always your choice.</p></details>
+          <details><summary>What models can I use?<span>+</span></summary><p>Use Apple Foundation Models where supported, plus bundled llama.cpp GGUF models. Pebble Mind Pro also lets you add validated custom models through HTTPS.</p></details>
+          <details><summary>Is Pebble Mind Pro a subscription?<span>+</span></summary><p>No. Pro is a one-time, non-consumable purchase processed by Apple through StoreKit.</p></details>
+          <details><summary>Which devices are supported?<span>+</span></summary><p>Pebble Mind is designed for iPhone, iPad, Mac, and visionOS, with model readiness and device-fit signals surfaced in the app.</p></details>
+        </div>
+      </section>
+
+      <section class="download section-pad" id="download"><div class="download-card reveal"><img src="assets/app-icon.png" alt="Pebble Mind app icon" /><div><div class="section-kicker">Make space for better thinking</div><h2>Ready when<br /><em>you are.</em></h2><p>Pebble Mind is being shaped for Apple platforms with privacy at the center.</p></div><a class="button button-primary" href="mailto:hello@pebblemind.app?subject=Pebble%20Mind%20early%20access">Join the early list <span>↗</span></a><small>No spam. Just a note when Pebble Mind is ready.</small></div></section>
+    </main>
+
+    <footer><div class="brand"><img src="assets/app-icon.png" alt="" /><span>Pebble Mind</span></div><span>Local intelligence, thoughtfully made.</span><a href="#top">Back to top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
