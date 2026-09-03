@@ -1,0 +1,9 @@
+campaign_token,channel,audience,content_id,destination,app_store_campaign_link,status,first_seen,impressions,product_page_views,first_time_downloads,activated_users,retained_d7,country_notes
+site_home,website,all audiences,site-home-01,https://aditigosar235.github.io/pebblemindai/,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+site_journal,website,all audiences,site-journal-01,https://aditigosar235.github.io/pebblemindai/blog.html,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+x_everyday,X,everyday users,x-everyday-01,https://apps.apple.com/us/app/pebble-mind/id6799536766,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+reddit_privacy,Reddit,privacy users,reddit-privacy-01,https://apps.apple.com/us/app/pebble-mind/id6799536766,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+hn_show,Hacker News,developers and local-AI users,hn-show-01,https://apps.apple.com/us/app/pebble-mind/id6799536766,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+video_everyday,Shorts-Reels-TikTok,everyday users,video-everyday-uses-01,https://apps.apple.com/us/app/pebble-mind/id6799536766,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+localized_worldwide,localized social,worldwide users,localized-social-2026-09-06,https://apps.apple.com/us/app/pebble-mind/id6799536766,PENDING_APP_STORE_CONNECT,PENDING,2026-09-09,0,0,0,0,0,
+
