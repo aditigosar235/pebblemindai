@@ -23,6 +23,7 @@ This file contains references only. It must never contain passwords, GPG passphr
 | TikTok | pebblemindpro+tiktok@gmail.com / PebbleMindAI | `pebblemind/tiktok` | PENDING_EMAIL | Signup fields accepted but TikTok did not advance after Send code; no post published |
 | Tumblr | pebblemindpro+tumblr@gmail.com / PebbleMindAI | `pebblemind/tumblr` | PENDING_EMAIL | Dashboard reached; email magic link required before counting a public post |
 | Threads | Instagram-linked / @pebblemindai | Uses authenticated Instagram session | AUTH_REQUIRED | Threads did not complete the Instagram-linked sign-in; no separate credential or post claimed |
+| SaaSHub | pebblemindpro+saashub@gmail.com / pebblemind-ai | `pebblemind/saashub` | PENDING_HUMAN_CHECK | Registration fields accepted; SaaSHub requested an “I am human” checkpoint; no listing published |
 
 ## Secure store
 
