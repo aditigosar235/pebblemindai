@@ -20,6 +20,7 @@ This file contains references only. It must never contain passwords, GPG passphr
 | Quora | pebblemindpro+quora@gmail.com / Pebble Mind | `pebblemind/quora` after confirmation | SECURITY_CHECKPOINT | Email code accepted; final password step stopped by Quora Turnstile; no credential stored |
 | Pinterest | pebblemindpro+pinterest@gmail.com / pebblemindpropinterest | `pebblemind/pinterest` | STORED | Business account active; public Pin https://www.pinterest.com/pin/1125829606880772922/ |
 | Instagram | pebblemindpro+instagram@gmail.com / @pebblemindai | `pebblemind/instagram` | STORED | Account confirmed; public post https://www.instagram.com/pebblemindai/p/Dc17NNyj7-K/ |
+| TikTok | pebblemindpro+tiktok@gmail.com / PebbleMindAI | `pebblemind/tiktok` | PENDING_EMAIL | Signup fields accepted but TikTok did not advance after Send code; no post published |
 
 ## Secure store
 
