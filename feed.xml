@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Pebble Mind Journal</title>
+    <link>https://aditigosar235.github.io/pebblemindai/blog.html</link>
+    <description>Plain-language guides to private, local AI on iPhone and iPad.</description>
+    <language>en-us</language>
+    <item>
+      <title>Getting started with Pebble Mind in three minutes</title>
+      <link>https://aditigosar235.github.io/pebblemindai/blog-getting-started.html</link>
+      <guid>https://aditigosar235.github.io/pebblemindai/blog-getting-started.html</guid>
+      <description>A simple guide to choosing a model and starting local AI on iPhone and iPad.</description>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Five everyday things to try with private AI on iPhone</title>
+      <link>https://aditigosar235.github.io/pebblemindai/blog-everyday-uses.html</link>
+      <guid>https://aditigosar235.github.io/pebblemindai/blog-everyday-uses.html</guid>
+      <description>Simple ways to begin using local AI for notes, messages, documents, and brainstorming.</description>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Does AI need to see everything?</title>
+      <link>https://aditigosar235.github.io/pebblemindai/blog-privacy-faq.html</link>
+      <guid>https://aditigosar235.github.io/pebblemindai/blog-privacy-faq.html</guid>
+      <description>A plain-language explanation of what stays on-device and when web search is optional.</description>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
