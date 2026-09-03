@@ -26,5 +26,12 @@
       <description>A plain-language explanation of what stays on-device and when web search is optional.</description>
       <pubDate>Mon, 07 Sep 2026 00:00:00 GMT</pubDate>
     </item>
+    <item>
+      <title>Why we built a private AI app for iPhone</title>
+      <link>https://aditigosar235.github.io/pebblemindai/blog-why-we-built-private-ai.html</link>
+      <guid>https://aditigosar235.github.io/pebblemindai/blog-why-we-built-private-ai.html</guid>
+      <description>A plain-language explanation of Pebble Mind's local workflow and privacy boundary.</description>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 GMT</pubDate>
+    </item>
   </channel>
 </rss>

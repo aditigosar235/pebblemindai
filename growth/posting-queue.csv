@@ -23,3 +23,10 @@ slot,channel,audience,asset,format,cta,status
 22,Bluesky,privacy users,outbox/2026-09-09/bluesky-mastodon.md,conversation post,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
 23,Mastodon,privacy users,outbox/2026-09-09/bluesky-mastodon.md,conversation post,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
 24,Individual outreach,local-AI and privacy creators,outbox/2026-09-09/outreach.md,personalized note,https://aditigosar235.github.io/pebblemindai/blog-getting-started.html,DRAFTED
+25,website,everyday privacy users,blog-why-we-built-private-ai.html,article,https://apps.apple.com/us/app/pebble-mind/id6799536766,READY_SITE_FILE
+26,Dev.to or Hashnode,developers,blog/2026-09-10-why-we-built-private-ai.md,article adaptation,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+27,X,everyday privacy users,outbox/2026-09-10/x.md,short posts,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+28,LinkedIn,everyday users and developers,outbox/2026-09-10/linkedin.md,plain-language posts,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+29,Reddit,privacy and local-AI users,outbox/2026-09-10/reddit.md,customized replies/self-post,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+30,Bluesky/Mastodon,privacy and local-AI users,outbox/2026-09-10/bluesky-mastodon.md,conversation posts,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+31,YouTube Shorts/Instagram Reels/TikTok,everyday users,outbox/2026-09-10/short-video.md,screen recordings,https://apps.apple.com/us/app/pebble-mind/id6799536766,SCRIPT_READY
