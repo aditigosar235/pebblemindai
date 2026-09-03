@@ -51,3 +51,5 @@ Apply this only after the account is verified. Use the same app icon as the avat
 | Dev.to / Hashnode | Publish a useful local-AI onboarding article with transparent ownership | `growth/blog/2026-09-03-private-ai-on-iphone.md` |
 
 Never claim a first post is live until a real URL is recorded. If authentication or verification is incomplete, use `DRAFTED — HUMAN PUBLISH REQUIRED`.
+
+Every live post or removal must also be recorded in `growth/post-inventory.csv` with its exact URL, status, and measured metrics.

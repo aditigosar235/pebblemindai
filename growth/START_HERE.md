@@ -15,6 +15,7 @@
 - Profile copy and first-post mapping: `growth/account-profile-pack.md`
 - App Store metadata and screenshot pack: `growth/app-store-copy.md`
 - Campaign attribution and reporting: `growth/attribution-runbook.md` and `growth/campaign-link-map.csv`
+- Complete post inventory: `growth/post-inventory.csv` (use alongside `content-log.csv`)
 
 ## Run one content cycle
 
