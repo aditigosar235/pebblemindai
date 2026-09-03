@@ -4,6 +4,7 @@
 
 - App: live iPhone/iPad listing at https://apps.apple.com/us/app/pebble-mind/id6799536766
 - Website: three public article pages in the site root: `blog.html`, `blog-getting-started.html`, and `blog-everyday-uses.html`
+- Public site URL: https://aditigosar235.github.io/pebblemindai/
 - Social: drafts are in `growth/outbox/2026-09-03/`, `2026-09-04/`, and `2026-09-05/`
 - Localization: seven-language draft pack is in `growth/outbox/2026-09-06/localized-social.md`
 - Credentials: never read into this repo; reference only `pass/pebblemind/google` in `growth/credentials-index.md`

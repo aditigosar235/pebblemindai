@@ -5,6 +5,7 @@ Last checked: 2026-09-03
 ## Use these facts
 
 - App Store URL: https://apps.apple.com/us/app/pebble-mind/id6799536766
+- Public marketing site: https://aditigosar235.github.io/pebblemindai/
 - App name: Pebble Mind
 - Developer: Aditi Maheshwari
 - Platform for this campaign: iPhone and iPad only
@@ -45,4 +46,4 @@ Last checked: 2026-09-03
 - Any newly shipped feature after source version 1.0.3/build 12
 - Localized App Store URLs if targeting a specific country
 - Exact wording of any privacy, device, or model claim not stated above
-- Correct public website deployment URL; `https://pebblemind.app` currently resolves to a different PebbleMind web app and must not be used for campaign links until corrected
+- Do not use `https://pebblemind.app` for campaign links; it currently resolves to a different PebbleMind web app
