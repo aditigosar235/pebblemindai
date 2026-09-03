@@ -12,6 +12,7 @@
 - Latest handoff pack: `growth/outbox/2026-09-09/` contains a compliant Show HN draft, Bluesky/Mastodon variants, and individualized outreach messages
 - Community entry points and rule links: `growth/community-targets.md`
 - Account creation order and alias map: `growth/account-setup-queue.csv`
+- Profile copy and first-post mapping: `growth/account-profile-pack.md`
 
 ## Run one content cycle
 
