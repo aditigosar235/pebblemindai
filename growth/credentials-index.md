@@ -21,6 +21,7 @@ This file contains references only. It must never contain passwords, GPG passphr
 | Pinterest | pebblemindpro+pinterest@gmail.com / pebblemindpropinterest | `pebblemind/pinterest` | STORED | Business account active; public Pin https://www.pinterest.com/pin/1125829606880772922/ |
 | Instagram | pebblemindpro+instagram@gmail.com / @pebblemindai | `pebblemind/instagram` | STORED | Account confirmed; public post https://www.instagram.com/pebblemindai/p/Dc17NNyj7-K/ |
 | TikTok | pebblemindpro+tiktok@gmail.com / PebbleMindAI | `pebblemind/tiktok` | PENDING_EMAIL | Signup fields accepted but TikTok did not advance after Send code; no post published |
+| Tumblr | pebblemindpro+tumblr@gmail.com / PebbleMindAI | `pebblemind/tumblr` | PENDING_EMAIL | Dashboard reached; email magic link required before counting a public post |
 
 ## Secure store
 
