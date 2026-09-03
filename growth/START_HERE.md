@@ -11,6 +11,7 @@
 - Publishing status: social accounts and posts are not verified as created or published
 - Latest handoff pack: `growth/outbox/2026-09-09/` contains a compliant Show HN draft, Bluesky/Mastodon variants, and individualized outreach messages
 - Community entry points and rule links: `growth/community-targets.md`
+- Account creation order and alias map: `growth/account-setup-queue.csv`
 
 ## Run one content cycle
 
