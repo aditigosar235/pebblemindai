@@ -13,6 +13,7 @@
 - Community entry points and rule links: `growth/community-targets.md`
 - Account creation order and alias map: `growth/account-setup-queue.csv`
 - Profile copy and first-post mapping: `growth/account-profile-pack.md`
+- App Store metadata and screenshot pack: `growth/app-store-copy.md`
 
 ## Run one content cycle
 
