@@ -19,4 +19,5 @@ date,channel,url,content_id,cta,status,impressions,reach,clicks,installs,notes
 2026-09-07,short-video,,video-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Needs actual screen recording
 2026-09-08,website,https://aditigosar235.github.io/pebblemindai/,pages-deployment-check,App Store,VERIFIED,0,0,0,0,GitHub Pages root and four article routes returned 200; public marketing site confirmed; workflow 33794840366 succeeded
 2026-09-08,website,https://aditigosar235.github.io/pebblemindai/sitemap.xml,seo-sitemap-01,Website,READY_SITE_FILE,0,0,0,0,Sitemap and robots.txt added for organic discovery
+2026-09-08,website,press.html,press-page-01,App Store,READY_SITE_FILE,0,0,0,0,Public press page with approved facts and contact CTA
 2026-09-03,website-local-validation,http://127.0.0.1:4173/,site-package-e2e,App Store,VERIFIED,0,0,0,0,All three article pages returned 200 and contained the App Store CTA; local validation only
