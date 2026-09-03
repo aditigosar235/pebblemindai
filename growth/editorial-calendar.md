@@ -6,6 +6,8 @@
 | 2026-09-04 | Getting started with Pebble Mind in three minutes | New iPhone/iPad AI users | Website blog, LinkedIn, Reddit, X, Shorts/Reels/TikTok | Ready on site; adaptations queued |
 | 2026-09-05 | Five everyday things to try with private AI | Everyday privacy-conscious users | Website blog, LinkedIn, Reddit, X, Shorts/Reels/TikTok | Source drafted; adaptations ready |
 | 2026-09-06 | Localized “try private AI” posts | Everyday users worldwide | X, Instagram, TikTok, Shorts, Bluesky, Mastodon, local communities | Drafted; fluent review required |
+
+Start the next cycle from `growth/START_HERE.md`.
 | Next cycle | Three everyday uses for local AI | Apple users and families | Website blog, social, short video | Queued |
 | Next cycle | How to start with Pebble Mind | New AI users | Website blog, Reddit, X, video | Queued |
 | Next cycle | Why local AI matters for personal notes | Privacy-conscious users | Website blog, LinkedIn, Reddit, X | Queued |
