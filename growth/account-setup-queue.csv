@@ -3,11 +3,12 @@ order,platform,public_handle,signup_email_alias,secure_store_entry,public_profil
 02,YouTube,PebbleMindAI,pebblemindpro+youtube@gmail.com,pebblemind/youtube,Pebble Mind,READY_TO_CREATE,Google session and channel verification,Create a brand channel under the authenticated base identity
 03,X,@PebbleMindAI,pebblemindpro+x@gmail.com,pebblemind/x,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use PebbleMindApp then PebbleMindHQ if handle is unavailable
 04,Reddit,u/PebbleMind,pebblemindpro+reddit@gmail.com,pebblemind/reddit,Pebble Mind,ACTIVE,Email verified; 2FA and community rules review,Created and profile verified 2026-09-03; one brand account only
-05,LinkedIn,Pebble Mind,pebblemindpro+linkedin@gmail.com,pebblemind/linkedin,Pebble Mind,READY_TO_CREATE,Real admin account and Page verification,Public posts must come from the free Company Page
-06,Instagram,PebbleMindAI,pebblemindpro+instagram@gmail.com,pebblemind/instagram,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use same avatar and bio as YouTube/X
-07,TikTok,PebbleMindAI,pebblemindpro+tiktok@gmail.com,pebblemind/tiktok,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use captioned vertical demos and disclose official ownership
-08,Bluesky,PebbleMindAI,pebblemindpro+bluesky@gmail.com,pebblemind/bluesky,Pebble Mind,READY_TO_CREATE,Email verification,Use conversation-first posts
-09,Mastodon,PebbleMindAI,pebblemindpro+mastodon@gmail.com,pebblemind/mastodon,Pebble Mind,READY_TO_CREATE,Instance approval and email verification,Preset instance must be selected after rules review
-10,Dev.to,PebbleMindAI,pebblemindpro+devto@gmail.com,pebblemind/devto,Pebble Mind,READY_TO_CREATE,Email verification,Publish useful article adaptation before CTA
-11,Hashnode,PebbleMindAI,pebblemindpro+hashnode@gmail.com,pebblemind/hashnode,Pebble Mind,READY_TO_CREATE,Email verification,Use canonical links to the public journal
-12,Product Hunt,[REAL_MAKER_NAME],OWNER_CHOICE,pebblemind/product-hunt,[REAL_MAKER_NAME],MAKER_REQUIRED,Real personal identity and account age,Do not use a brand or fabricated identity
+05,Hacker News,PebbleMindXYZ,none,pebblemind/hackernews,Pebble Mind,ACTIVE,Submit access verified; profile endpoint rate-limited,Created and authenticated 2026-09-03; no submission published
+06,LinkedIn,Pebble Mind,pebblemindpro+linkedin@gmail.com,pebblemind/linkedin,Pebble Mind,READY_TO_CREATE,Real admin account and Page verification,Public posts must come from the free Company Page
+07,Instagram,PebbleMindAI,pebblemindpro+instagram@gmail.com,pebblemind/instagram,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use same avatar and bio as YouTube/X
+08,TikTok,PebbleMindAI,pebblemindpro+tiktok@gmail.com,pebblemind/tiktok,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use captioned vertical demos and disclose official ownership
+09,Bluesky,PebbleMindAI,pebblemindpro+bluesky@gmail.com,pebblemind/bluesky,Pebble Mind,READY_TO_CREATE,Email verification,Use conversation-first posts
+10,Mastodon,PebbleMindAI,pebblemindpro+mastodon@gmail.com,pebblemind/mastodon,Pebble Mind,READY_TO_CREATE,Instance approval and email verification,Preset instance must be selected after rules review
+11,Dev.to,PebbleMindAI,pebblemindpro+devto@gmail.com,pebblemind/devto,Pebble Mind,READY_TO_CREATE,Email verification,Publish useful article adaptation before CTA
+12,Hashnode,PebbleMindAI,pebblemindpro+hashnode@gmail.com,pebblemind/hashnode,Pebble Mind,READY_TO_CREATE,Email verification,Use canonical links to the public journal
+13,Product Hunt,[REAL_MAKER_NAME],OWNER_CHOICE,pebblemind/product-hunt,[REAL_MAKER_NAME],MAKER_REQUIRED,Real personal identity and account age,Do not use a brand or fabricated identity
