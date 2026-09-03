@@ -19,3 +19,7 @@ slot,channel,audience,asset,format,cta,status
 18,website,everyday users,blog-everyday-uses.html,article,https://apps.apple.com/us/app/pebble-mind/id6799536766,READY_SITE_FILE
 19,Reddit,privacy users,outbox/2026-09-03/reddit.md,relevant reply,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
 20,X,worldwide users,outbox/2026-09-06/localized-social.md,localized post,https://apps.apple.com/us/app/pebble-mind/id6799536766,FLUENT_REVIEW_REQUIRED
+21,Hacker News,developers and local-AI users,outbox/2026-09-09/hn.md,Show HN submission,https://apps.apple.com/us/app/pebble-mind/id6799536766,MAKER_REQUIRED
+22,Bluesky,privacy users,outbox/2026-09-09/bluesky-mastodon.md,conversation post,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+23,Mastodon,privacy users,outbox/2026-09-09/bluesky-mastodon.md,conversation post,https://apps.apple.com/us/app/pebble-mind/id6799536766,DRAFTED
+24,Individual outreach,local-AI and privacy creators,outbox/2026-09-09/outreach.md,personalized note,https://aditigosar235.github.io/pebblemindai/blog-getting-started.html,DRAFTED

@@ -3,12 +3,13 @@
 ## Current state
 
 - App: live iPhone/iPad listing at https://apps.apple.com/us/app/pebble-mind/id6799536766
-- Website: three public article pages in the site root: `blog.html`, `blog-getting-started.html`, and `blog-everyday-uses.html`
+- Website: four public article pages plus `press.html` in the site root; start from `blog.html` and use `sitemap.xml` for the complete list
 - Public site URL: https://aditigosar235.github.io/pebblemindai/
 - Social: drafts are in `growth/outbox/2026-09-03/`, `2026-09-04/`, and `2026-09-05/`
 - Localization: seven-language draft pack is in `growth/outbox/2026-09-06/localized-social.md`
 - Credentials: never read into this repo; reference only `pass/pebblemind/google` in `growth/credentials-index.md`
 - Publishing status: social accounts and posts are not verified as created or published
+- Latest handoff pack: `growth/outbox/2026-09-09/` contains a compliant Show HN draft, Bluesky/Mastodon variants, and individualized outreach messages
 
 ## Run one content cycle
 
@@ -23,6 +24,7 @@
 9. Record every asset in `content-log.csv` before publication, using `DRAFTED` or `READY_SITE_FILE` until a real URL and analytics are available.
 10. Publish only through authenticated accounts. If access is missing, report `DRAFTED — HUMAN PUBLISH REQUIRED`.
 11. After publication, record the real post URL, platform-reported reach/impressions, clicks, installs, and replies. Never estimate reach.
+12. For outreach, populate `growth/outreach/prospects.csv` from public, relevant discussions before sending any individual note; never invent a contact or use a scraped list.
 
 ## Account setup order
 
