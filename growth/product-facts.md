@@ -45,3 +45,4 @@ Last checked: 2026-09-03
 - Any newly shipped feature after source version 1.0.3/build 12
 - Localized App Store URLs if targeting a specific country
 - Exact wording of any privacy, device, or model claim not stated above
+- Correct public website deployment URL; `https://pebblemind.app` currently resolves to a different PebbleMind web app and must not be used for campaign links until corrected

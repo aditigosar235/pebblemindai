@@ -4,7 +4,7 @@ date,channel,url,content_id,cta,status,impressions,reach,clicks,installs,notes
 2026-09-03,x,,x-plain-language-01,App Store,DRAFTED,0,0,0,0,Brand account required
 2026-09-03,linkedin,,linkedin-plain-language-01,App Store,DRAFTED,0,0,0,0,Brand Page required
 2026-09-03,short-video,,video-private-ai-01,App Store,DRAFTED,0,0,0,0,Needs actual screen recording
-2026-09-04,website,blog-getting-started.html,get-started-plain-language,App Store,READY_SITE_FILE,0,0,0,0,Second plain-language article; deploy the web directory before external sharing
+2026-09-04,website,blog-getting-started.html,get-started-plain-language,App Store,READY_SITE_FILE,0,0,0,0,Second plain-language article; external domain deployment must be verified before sharing
 2026-09-05,website,blog-everyday-uses.html,private-ai-everyday-tasks,App Store,READY_SITE_FILE,0,0,0,0,Third plain-language article; deploy the web directory before external sharing
 2026-09-05,reddit,,reddit-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Relevant thread and rules required
 2026-09-05,x,,x-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Five short posts ready
@@ -12,7 +12,7 @@ date,channel,url,content_id,cta,status,impressions,reach,clicks,installs,notes
 2026-09-05,short-video,,video-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Needs actual screen recording
 2026-09-06,localized-social,,localized-social-2026-09-06,App Store,DRAFTED,0,0,0,0,Spanish Portuguese French German Japanese Korean Hindi variants; fluent review required
 2026-09-06,repository,START_HERE.md,marketing-start-runbook,None,VERIFIED,0,0,0,0,Subagent pickup instructions and publishing completion test added
-2026-09-07,website,blog-privacy-faq.html,privacy-faq-plain-language,App Store,READY_SITE_FILE,0,0,0,0,Fourth plain-language article; deploy the web directory before external sharing
+2026-09-07,website,blog-privacy-faq.html,privacy-faq-plain-language,App Store,READY_SITE_FILE,0,0,0,0,Fourth plain-language article; external domain deployment must be verified before sharing
 2026-09-07,reddit,,reddit-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Relevant thread and rules required
 2026-09-07,x,,x-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Five general-audience posts ready
 2026-09-07,linkedin,,linkedin-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Brand Page required
