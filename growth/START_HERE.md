@@ -13,8 +13,8 @@
 
 1. Read `product-facts.md` and `../MARKETING_ACCOUNT_INVENTORY.md`.
 2. Check the live App Store listing and current iOS source before making claims.
-3. Select one audience: everyday privacy-conscious users, Apple users/families, or developers/local-AI users.
-4. Select the next topic from `editorial-calendar.md`.
+3. Select the next slot from `posting-queue.csv`; do not invent a new channel or cadence.
+4. Select the audience named in that slot: everyday privacy-conscious users, Apple users/families, or developers/local-AI users.
 5. Write the complete website article under `growth/blog/` and add/update its public HTML page in the site root.
 6. Create one customized draft each for Reddit, X, LinkedIn, and short video under `growth/outbox/YYYY-MM-DD/`.
 7. Create the seven localized versions when the topic is suitable for general users; obtain fluent review before publishing.
