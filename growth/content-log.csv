@@ -10,4 +10,5 @@ date,channel,url,content_id,cta,status,impressions,reach,clicks,installs,notes
 2026-09-05,x,,x-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Five short posts ready
 2026-09-05,linkedin,,linkedin-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Brand Page required
 2026-09-05,short-video,,video-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Needs actual screen recording
+2026-09-06,localized-social,,localized-social-2026-09-06,App Store,DRAFTED,0,0,0,0,Spanish Portuguese French German Japanese Korean Hindi variants; fluent review required
 2026-09-03,website-local-validation,http://127.0.0.1:4173/,site-package-e2e,App Store,VERIFIED,0,0,0,0,All three article pages returned 200 and contained the App Store CTA; local validation only
