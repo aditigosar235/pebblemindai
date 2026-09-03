@@ -10,5 +10,5 @@ order,platform,public_handle,signup_email_alias,secure_store_entry,public_profil
 09,Bluesky,PebbleMindAI,pebblemindpro+bluesky@gmail.com,pebblemind/bluesky,Pebble Mind,READY_TO_CREATE,Email verification,Use conversation-first posts
 10,Mastodon,PebbleMindAI,pebblemindpro+mastodon@gmail.com,pebblemind/mastodon,Pebble Mind,READY_TO_CREATE,Instance approval and email verification,Preset instance must be selected after rules review
 11,Dev.to,PebbleMindAI,pebblemindpro+devto@gmail.com,pebblemind/devto,Pebble Mind,CAPTCHA_REQUIRED,Visible reCAPTCHA before account creation,Signup form completed but account creation stopped at the visible CAPTCHA; no credentials stored
-12,Hashnode,PebbleMindAI,pebblemindpro+hashnode@gmail.com,pebblemind/hashnode,Pebble Mind,READY_TO_CREATE,Email verification,Use canonical links to the public journal
+12,Hashnode,PebbleMindAI,pebblemindpro+hashnode@gmail.com,pebblemind/hashnode,Pebble Mind,SECURITY_CHECKPOINT,Vercel browser verification before signup,Signup route reached a security checkpoint; account not created and no credentials stored
 13,Product Hunt,[REAL_MAKER_NAME],OWNER_CHOICE,pebblemind/product-hunt,[REAL_MAKER_NAME],MAKER_REQUIRED,Real personal identity and account age,Do not use a brand or fabricated identity
