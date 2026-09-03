@@ -6,6 +6,7 @@ Last checked: 2026-09-03
 
 - App Store URL: https://apps.apple.com/us/app/pebble-mind/id6799536766
 - Public marketing site: https://aditigosar235.github.io/pebblemindai/
+- Sitemap: https://aditigosar235.github.io/pebblemindai/sitemap.xml
 - App name: Pebble Mind
 - Developer: Aditi Maheshwari
 - Platform for this campaign: iPhone and iPad only

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aditigosar235.github.io/pebblemindai/sitemap.xml
