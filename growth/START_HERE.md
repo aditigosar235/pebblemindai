@@ -10,6 +10,7 @@
 - Credentials: never read into this repo; reference only `pass/pebblemind/google` in `growth/credentials-index.md`
 - Publishing status: social accounts and posts are not verified as created or published
 - Latest handoff pack: `growth/outbox/2026-09-09/` contains a compliant Show HN draft, Bluesky/Mastodon variants, and individualized outreach messages
+- Community entry points and rule links: `growth/community-targets.md`
 
 ## Run one content cycle
 
