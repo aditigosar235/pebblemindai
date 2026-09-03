@@ -14,9 +14,11 @@ This file contains references only. It must never contain passwords, GPG passphr
 | Planned federated profiles | pebblemindpro+bluesky@gmail.com / pebblemindpro+mastodon@gmail.com | `pebblemind/bluesky` and `pebblemind/mastodon` after creation | BLUESKY_CODE_REQUIRED / MASTODON_EMAIL_REQUIRED | Bluesky signup has an invalid verification-code checkpoint; Mastodon signup accepted and is waiting for email confirmation; no new secrets stored |
 | Planned developer profiles | pebblemindpro+devto@gmail.com / pebblemindpro+hashnode@gmail.com | `pebblemind/devto` and `pebblemind/hashnode` after creation | NOT CREATED | Publish useful article adaptation before promotional CTA |
 | DEV Community | pebblemindpro+devto@gmail.com / @pebblemindai | `pebblemind/devto` | STORED | Account authenticated; profile completed; public article https://dev.to/pebblemindai/private-ai-on-iphone-what-local-first-actually-means-4hmb |
-| Mastodon | pebblemindpro+mastodon@gmail.com / PebbleMindAI | `pebblemind/mastodon` after confirmation | EMAIL_REQUIRED | Signup accepted on mastodon.social; confirmation link required before storing credentials or posting |
+| Mastodon | pebblemindpro+mastodon@gmail.com / @PebbleMindAI | `pebblemind/mastodon` | STORED | Account confirmed; public status https://mastodon.social/@PebbleMindAI/117209465466588093 |
 | X | pebblemindpro+x@gmail.com / @PebbleMindAI | `pebblemind/x` after phone verification | PHONE_REQUIRED | Email signup reached phone/SMS verification; no account claimed |
 | Bluesky | pebblemindpro+bluesky@gmail.com / PebbleMindAI | `pebblemind/bluesky` after fresh code | EMAIL_CODE_REQUIRED | Existing signup tab reports invalid verification code; no account claimed |
+| Quora | pebblemindpro+quora@gmail.com / Pebble Mind | `pebblemind/quora` after confirmation | SECURITY_CHECKPOINT | Email code accepted; final password step stopped by Quora Turnstile; no credential stored |
+| Pinterest | pebblemindpro+pinterest@gmail.com / pebblemindpropinterest | `pebblemind/pinterest` | STORED | Business account active; public Pin https://www.pinterest.com/pin/1125829606880772922/ |
 
 ## Secure store
 
