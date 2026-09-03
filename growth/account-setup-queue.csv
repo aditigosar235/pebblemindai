@@ -2,7 +2,7 @@ order,platform,public_handle,signup_email_alias,secure_store_entry,public_profil
 01,Google,pebblemindpro@gmail.com,pebblemindpro@gmail.com,pebblemind/google,Pebble Mind,EXISTING_BASE,Owner sign-in,Base inbox used for recovery; do not create a duplicate Google identity
 02,YouTube,PebbleMindAI,pebblemindpro+youtube@gmail.com,pebblemind/youtube,Pebble Mind,READY_TO_CREATE,Google session and channel verification,Create a brand channel under the authenticated base identity
 03,X,@PebbleMindAI,pebblemindpro+x@gmail.com,pebblemind/x,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use PebbleMindApp then PebbleMindHQ if handle is unavailable
-04,Reddit,u/PebbleMind,pebblemindpro+reddit@gmail.com,pebblemind/reddit,Pebble Mind,READY_TO_CREATE,Email verification and community rules,One brand account only; no automated or repetitive promotion
+04,Reddit,u/PebbleMind,pebblemindpro+reddit@gmail.com,pebblemind/reddit,Pebble Mind,ACTIVE,Email verified; 2FA and community rules review,Created and profile verified 2026-09-03; one brand account only
 05,LinkedIn,Pebble Mind,pebblemindpro+linkedin@gmail.com,pebblemind/linkedin,Pebble Mind,READY_TO_CREATE,Real admin account and Page verification,Public posts must come from the free Company Page
 06,Instagram,PebbleMindAI,pebblemindpro+instagram@gmail.com,pebblemind/instagram,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use same avatar and bio as YouTube/X
 07,TikTok,PebbleMindAI,pebblemindpro+tiktok@gmail.com,pebblemind/tiktok,Pebble Mind,READY_TO_CREATE,Email or phone verification,Use captioned vertical demos and disclose official ownership
