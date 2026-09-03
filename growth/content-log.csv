@@ -12,4 +12,9 @@ date,channel,url,content_id,cta,status,impressions,reach,clicks,installs,notes
 2026-09-05,short-video,,video-everyday-uses-01,App Store,DRAFTED,0,0,0,0,Needs actual screen recording
 2026-09-06,localized-social,,localized-social-2026-09-06,App Store,DRAFTED,0,0,0,0,Spanish Portuguese French German Japanese Korean Hindi variants; fluent review required
 2026-09-06,repository,START_HERE.md,marketing-start-runbook,None,VERIFIED,0,0,0,0,Subagent pickup instructions and publishing completion test added
+2026-09-07,website,blog-privacy-faq.html,privacy-faq-plain-language,App Store,READY_SITE_FILE,0,0,0,0,Fourth plain-language article; deploy the web directory before external sharing
+2026-09-07,reddit,,reddit-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Relevant thread and rules required
+2026-09-07,x,,x-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Five general-audience posts ready
+2026-09-07,linkedin,,linkedin-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Brand Page required
+2026-09-07,short-video,,video-privacy-faq-01,App Store,DRAFTED,0,0,0,0,Needs actual screen recording
 2026-09-03,website-local-validation,http://127.0.0.1:4173/,site-package-e2e,App Store,VERIFIED,0,0,0,0,All three article pages returned 200 and contained the App Store CTA; local validation only
