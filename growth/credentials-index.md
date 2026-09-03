@@ -13,7 +13,7 @@ This file contains references only. It must never contain passwords, GPG passphr
 | Planned Meta profiles | pebblemindpro+instagram@gmail.com / pebblemindpro+tiktok@gmail.com | `pebblemind/instagram` and `pebblemind/tiktok` after creation | NOT CREATED | Record each profile separately after verification |
 | Planned federated profiles | pebblemindpro+bluesky@gmail.com / pebblemindpro+mastodon@gmail.com | `pebblemind/bluesky` and `pebblemind/mastodon` after creation | NOT CREATED | Mastodon instance must be selected after rules review |
 | Planned developer profiles | pebblemindpro+devto@gmail.com / pebblemindpro+hashnode@gmail.com | `pebblemind/devto` and `pebblemind/hashnode` after creation | NOT CREATED | Publish useful article adaptation before promotional CTA |
-| DEV Community | pebblemindpro+devto@gmail.com / @pebblemindai | `pebblemind/devto` | STORED | Account authenticated; public article https://dev.to/pebblemindai/private-ai-on-iphone-what-local-first-actually-means-4hmb |
+| DEV Community | pebblemindpro+devto@gmail.com / @pebblemindai | `pebblemind/devto` | STORED | Account authenticated; profile completed; public article https://dev.to/pebblemindai/private-ai-on-iphone-what-local-first-actually-means-4hmb |
 
 ## Secure store
 
