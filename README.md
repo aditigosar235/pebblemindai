@@ -8,11 +8,14 @@ The local workflow does not require an account or API key. Web search is separat
 
 - [Download on the App Store](https://apps.apple.com/us/app/pebble-mind/id6799536766)
 - [Pebble Mind website](https://aditigosar235.github.io/pebblemindai/)
+- [Private AI recipes](https://aditigosar235.github.io/pebblemindai/recipes.html)
 - [Journal](https://aditigosar235.github.io/pebblemindai/blog.html)
 - [Press and product overview](https://aditigosar235.github.io/pebblemindai/press.html)
 
 ## For developers and local-model users
 
 Pebble Mind supports a first-version workflow for choosing compatible models, checking device-readiness information before downloading, and working locally on Apple platforms. Pro adds custom model importing, expanded model management, advanced generation controls, configurable search domains, local data transfer, searchable logs, and context compaction.
+
+The [recipe catalog](https://aditigosar235.github.io/pebblemindai/recipes.html) describes guided workflows for Calendar, Photos, nearby places, Contacts, Reminders, Health, Music, and daylight. Supported summaries use bounded source facts and on-device processing; write actions require review and confirmation, while Nearby and optional web search have explicit network boundaries.
 
 This repository contains the static marketing site and campaign content. Product behavior and platform implementation live in the associated application repositories.
