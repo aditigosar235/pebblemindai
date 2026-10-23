@@ -1,0 +1,9 @@
+{
+  "name": "pebble-mind-crash-report",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-22",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGINS": "https://pebblemind.pro,https://aditigosar235.github.io"
+  }
+}

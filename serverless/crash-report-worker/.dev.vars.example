@@ -1,0 +1,5 @@
+# Local-only values for `npm run dev`; never commit real credentials.
+RESEND_API_KEY=
+RESEND_API_URL=https://api.resend.com/emails
+CRASH_REPORT_FROM=Pebble Mind Support <support@example.com>
+CRASH_REPORT_TO=maintainer@example.com

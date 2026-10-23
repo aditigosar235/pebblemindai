@@ -1,0 +1,73 @@
+name: Deploy Pebble Mind crash-report Worker
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "serverless/crash-report-worker/**"
+      - ".github/workflows/deploy-crash-report-worker.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: crash-report-worker
+  cancel-in-progress: true
+
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: serverless/crash-report-worker
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: serverless/crash-report-worker/package-lock.json
+
+      - name: Install Worker tooling
+        run: npm ci
+
+      - name: Run Worker tests
+        run: npm test
+
+      - name: Validate deployment secrets are present
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          CRASH_REPORT_FROM: ${{ secrets.CRASH_REPORT_FROM }}
+          CRASH_REPORT_TO: ${{ secrets.CRASH_REPORT_TO }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN"
+          test -n "$CLOUDFLARE_ACCOUNT_ID"
+          test -n "$RESEND_API_KEY"
+          test -n "$CRASH_REPORT_FROM"
+          test -n "$CRASH_REPORT_TO"
+
+      - name: Deploy Worker code
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Configure Worker email secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          CRASH_REPORT_FROM: ${{ secrets.CRASH_REPORT_FROM }}
+          CRASH_REPORT_TO: ${{ secrets.CRASH_REPORT_TO }}
+          SECRETS_FILE: ${{ runner.temp }}/pebble-mind-crash-report-secrets.json
+        run: |
+          node -e 'const fs = require("fs"); fs.writeFileSync(process.env.SECRETS_FILE, JSON.stringify({RESEND_API_KEY: process.env.RESEND_API_KEY, CRASH_REPORT_FROM: process.env.CRASH_REPORT_FROM, CRASH_REPORT_TO: process.env.CRASH_REPORT_TO}));'
+          npx wrangler secret bulk "$SECRETS_FILE"
+          rm -f "$SECRETS_FILE"
