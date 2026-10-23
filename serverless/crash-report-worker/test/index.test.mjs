@@ -10,6 +10,20 @@ const basePayload = {
   build: "39",
   platform: "iOS",
   osVersion: "iOS 26.0",
+  diagnostics: {
+    deviceModel: "iPhone",
+    networkInterface: "Wi-Fi",
+    networkIsExpensive: false,
+    networkIsConstrained: false,
+    availableDiskSpace: "12 GB",
+    physicalMemoryBytes: 8589934592,
+    thermalState: "Nominal",
+    lowPowerModeEnabled: false,
+    traceByteCount: 26,
+    stackFrameCount: 2,
+    fatalSignalFrameLimit: 512,
+    fatalSignalFrameLimitReached: false,
+  },
 };
 
 test("accepts a valid diagnostic payload and ignores untrusted email fields", () => {
@@ -42,13 +56,56 @@ test("bounds diagnostic payload size", () => {
   assert.deepEqual(result, { ok: false, error: "trace_too_large" });
 });
 
+test("returns HTTP 413 for an oversized trace instead of truncating it", async () => {
+  const response = await worker.fetch(
+    new Request("https://worker.example/", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ ...basePayload, trace: "x".repeat(512 * 1024 + 1) }),
+    }),
+    {}
+  );
+
+  assert.equal(response.status, 413);
+  assert.deepEqual(await response.json(), { error: "trace_too_large" });
+});
+
+test("includes sanitized device diagnostics and full trace in the message", () => {
+  const trace = "frame 0\nframe 1 — café";
+  const result = validatePayload({
+    ...basePayload,
+    trace,
+    diagnostics: {
+      ...basePayload.diagnostics,
+      networkInterface: "Cellular",
+      networkIsExpensive: true,
+      networkIsConstrained: true,
+      availableDiskSpace: "4 GB",
+      thermalState: "Fair",
+      lowPowerModeEnabled: true,
+      stackFrameCount: 2,
+    },
+  });
+  assert.equal(result.ok, true);
+
+  const message = buildMessage(result.value);
+  assert.match(message.text, /OS version: iOS 26\.0/);
+  assert.match(message.text, /Network at report review: Cellular · metered · constrained/);
+  assert.match(message.text, /Available storage at report review: 4 GB/);
+  assert.match(message.text, /Thermal: Fair; Low Power Mode: On/);
+  assert.match(message.text, /captured stack frames: 2/);
+  assert.ok(message.text.endsWith(trace));
+});
+
 test("builds a generic sender message without a user email", () => {
-  const message = buildMessage(basePayload);
+  const message = buildMessage(validatePayload(basePayload).value);
 
   assert.match(message.subject, /^\[Pebble Mind\] Crash report/);
   assert.match(message.text, /It crashed after tapping Run/);
-  assert.match(message.text, /sanitized diagnostic trace is attached as crash-trace\.txt/);
-  assert.equal(message.text.includes("trace line 2"), false);
+  assert.match(message.text, /attached as crash-trace\.txt/);
+  assert.match(message.text, /Device model: iPhone/);
+  assert.match(message.text, /Available storage at report review: 12 GB/);
+  assert.match(message.text, /trace line 2/);
   assert.equal(message.text.includes("user@example.com"), false);
 });
 
@@ -112,7 +169,8 @@ test("sends the sanitized UTF-8 trace as an attachment to the server-owned recip
     assert.deepEqual(providerBody.from, "Pebble Mind Support <support@example.com>");
     assert.deepEqual(providerBody.to, ["maintainer@example.com"]);
     assert.equal(providerBody.text.includes("user@example.com"), false);
-    assert.equal(providerBody.text.includes("Crash at /Users"), false);
+    assert.equal(providerBody.text.includes("Crash at /Users/<user>"), true);
+    assert.equal(providerBody.text.includes("/Users/trishala"), false);
     assert.match(providerBody.text, /crash-trace\.txt/);
     assert.equal(providerBody.attachments.length, 1);
     assert.equal(providerBody.attachments[0].filename, "crash-trace.txt");
