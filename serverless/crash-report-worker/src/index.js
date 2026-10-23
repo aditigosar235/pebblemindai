@@ -49,6 +49,11 @@ export default {
     }
 
     const message = buildMessage(payload.value);
+    const traceAttachment = {
+      filename: "crash-trace.txt",
+      content_type: "text/plain",
+      content: encodeBase64(payload.value.trace),
+    };
     let upstreamResponse;
     try {
       upstreamResponse = await fetch(env.RESEND_API_URL || RESEND_ENDPOINT, {
@@ -62,6 +67,7 @@ export default {
           to: [env.CRASH_REPORT_TO],
           subject: message.subject,
           text: message.text,
+          attachments: [traceAttachment],
         }),
       });
     } catch {
@@ -124,10 +130,19 @@ export function buildMessage(payload) {
       "User feedback:",
       payload.feedback || "(none provided)",
       "",
-      "Diagnostic trace:",
-      payload.trace,
+      "The sanitized diagnostic trace is attached as crash-trace.txt.",
     ].join("\n"),
   };
+}
+
+function encodeBase64(value) {
+  const bytes = new TextEncoder().encode(value);
+  let binary = "";
+  const chunkSize = 0x8000;
+  for (let offset = 0; offset < bytes.length; offset += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize));
+  }
+  return btoa(binary);
 }
 
 function cleanField(value, maximumLength) {
@@ -136,9 +151,15 @@ function cleanField(value, maximumLength) {
 }
 
 function sanitizeText(value) {
-  return value
-    .replace(/\/Users\/[^/\s]+/g, "/Users/<user>")
-    .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "<email>");
+  const sanitizedPaths = value.replace(/\/Users\/[^/\s]+/g, "/Users/<user>");
+  if (!sanitizedPaths.includes("@")) return sanitizedPaths;
+
+  // Bound each match so a long trace without a valid address cannot trigger
+  // unbounded backtracking while searching for one.
+  return sanitizedPaths.replace(
+    /[A-Z0-9._%+-]{1,64}@[A-Z0-9.-]{1,253}\.[A-Z]{2,63}/gi,
+    "<email>",
+  );
 }
 
 function originIsAllowed(request, env) {

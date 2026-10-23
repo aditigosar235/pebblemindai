@@ -47,7 +47,8 @@ test("builds a generic sender message without a user email", () => {
 
   assert.match(message.subject, /^\[Pebble Mind\] Crash report/);
   assert.match(message.text, /It crashed after tapping Run/);
-  assert.match(message.text, /trace line 2/);
+  assert.match(message.text, /sanitized diagnostic trace is attached as crash-trace\.txt/);
+  assert.equal(message.text.includes("trace line 2"), false);
   assert.equal(message.text.includes("user@example.com"), false);
 });
 
@@ -72,9 +73,15 @@ test("health endpoint does not call the email provider", async () => {
   }
 });
 
-test("posts only the server-owned sender and recipient to the email provider", async () => {
+test("sends the sanitized UTF-8 trace as an attachment to the server-owned recipient", async () => {
   const originalFetch = globalThis.fetch;
   let providerRequest;
+  const rawTrace = [
+    "Crash at /Users/trishala/Library/Crash.log user@example.com",
+    "Unicode: café 🧭",
+    "frame ".repeat(6_000),
+  ].join("\n");
+  const sanitizedTrace = `Crash at /Users/<user>/Library/Crash.log <email>\nUnicode: café 🧭\n${"frame ".repeat(6_000)}`;
   globalThis.fetch = async (input, init) => {
     providerRequest = { input, init };
     return new Response(JSON.stringify({ id: "email-id" }), { status: 200 });
@@ -85,7 +92,11 @@ test("posts only the server-owned sender and recipient to the email provider", a
       new Request("https://worker.example/", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ ...basePayload, email: "user@example.com" }),
+        body: JSON.stringify({
+          ...basePayload,
+          trace: rawTrace,
+          email: "user@example.com",
+        }),
       }),
       {
         RESEND_API_KEY: "server-only-key",
@@ -101,7 +112,58 @@ test("posts only the server-owned sender and recipient to the email provider", a
     assert.deepEqual(providerBody.from, "Pebble Mind Support <support@example.com>");
     assert.deepEqual(providerBody.to, ["maintainer@example.com"]);
     assert.equal(providerBody.text.includes("user@example.com"), false);
+    assert.equal(providerBody.text.includes("Crash at /Users"), false);
+    assert.match(providerBody.text, /crash-trace\.txt/);
+    assert.equal(providerBody.attachments.length, 1);
+    assert.equal(providerBody.attachments[0].filename, "crash-trace.txt");
+    assert.equal(providerBody.attachments[0].content_type, "text/plain");
+    const attachmentBytes = Uint8Array.from(
+      atob(providerBody.attachments[0].content),
+      (character) => character.charCodeAt(0),
+    );
+    assert.equal(
+      new TextDecoder().decode(attachmentBytes),
+      sanitizedTrace,
+    );
     assert.equal(providerBody.email, undefined);
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+});
+
+test("attaches the largest accepted trace without overflowing base64 encoding", async () => {
+  const originalFetch = globalThis.fetch;
+  let providerBody;
+  const trace = "x".repeat(512 * 1024 - 17) + " user@example.com";
+  const sanitizedTrace = "x".repeat(512 * 1024 - 17) + " <email>";
+  assert.equal(new TextEncoder().encode(trace).byteLength, 512 * 1024);
+  globalThis.fetch = async (_input, init) => {
+    providerBody = JSON.parse(init.body);
+    return new Response(JSON.stringify({ id: "email-id" }), { status: 200 });
+  };
+
+  try {
+    const response = await worker.fetch(
+      new Request("https://worker.example/", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ ...basePayload, trace }),
+      }),
+      {
+        RESEND_API_KEY: "server-only-key",
+        CRASH_REPORT_FROM: "Pebble Mind Support <support@example.com>",
+        CRASH_REPORT_TO: "maintainer@example.com",
+      },
+    );
+
+    assert.equal(response.status, 202);
+    const attachment = providerBody.attachments[0];
+    assert.equal(
+      attachment.content.length,
+      4 * Math.ceil(new TextEncoder().encode(sanitizedTrace).byteLength / 3),
+    );
+    const decoded = Uint8Array.from(atob(attachment.content), (character) => character.charCodeAt(0));
+    assert.equal(new TextDecoder().decode(decoded), sanitizedTrace);
   } finally {
     globalThis.fetch = originalFetch;
   }
